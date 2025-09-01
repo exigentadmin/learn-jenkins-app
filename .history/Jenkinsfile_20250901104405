@@ -97,7 +97,7 @@ pipeline {
 
         stage('Approve Prod Deploy') {
             steps {
-                timeout(15) {
+                timeout(1) {
                     input message: 'Approve deployment to production?', ok: 'Deploy'
                 }                
             }
